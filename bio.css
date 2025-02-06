@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif; /* Зміна шрифту на Oswald */
+    background-color: #000000; /* Чорний фон */
+    color: white; /* Білий текст для контрасту */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%; /* Округлення країв */
+    border: 3px solid white; /* Білий контур для фото */
+}
+
+h1 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Збільшено відстань між кнопками */
+}
+
+.social-button {
+    background-color: transparent; /* Прозорий фон для кнопок */
+    color: white; /* Білий текст на кнопках */
+    border: 2px solid white; /* Білий контур для кнопок */
+    padding: 15px 30px; /* Збільшено розмір кнопок */
+    text-decoration: none;
+    border-radius: 10px; /* Округлення країв кнопок */
+    transition: background-color 0.3s, color 0.3s; /* Додано анімацію для фону та кольору */
+    font-size: 1.1em; /* Збільшено шрифт кнопок */
+    display: inline-block; /* Додано для кнопок */
+}
+
+.social-button:hover {
+    background-color: white; /* Білий фон при наведенні */
+    color: black; /* Чорний текст при наведенні */
+}
+
+/* Стилі для меню */
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-button {
+    font-size: 24px;
+    text-decoration: none;
+    color: white; /* Білий текст для кнопки меню */
+}
+
+.menu-content {
+    display: none; /* Сховати меню за замовчуванням */
+    position: fixed; /* Фіксоване позиціонування */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрування меню */
+    background-color: #000000; /* Чорний фон для меню */
+    padding: 120px; /* Збільшено розмір меню */
+    border-radius: 10px; /* Округлення країв меню */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Біла тінь для меню */
+    z-index: 1000; /* Впереди інших елементів */
+}
+
+.menu-content.show {
+    display: block; /* Показати меню при натисканні */
+}
+
+.article-links {
+    list-style-type: none; /* Вимкнення маркерів списку */
+    padding: 0; /* Вимкнення відступів */
+}
+
+.article-links li {
+    margin: 10px 0; /* Відстань між кнопками */
+}
+
+.article-links .social-button {
+    background-color: transparent; /* Прозорий фон для кнопок у меню */
+    color: white; /* Білий текст на кнопках */
+    border: 2px solid white; /* Білий контур для кнопок у меню */
+    padding: 15px 30px; /* Збільшено розмір кнопок */
+    text-decoration: none;
+    border-radius: 10px; /* Округлення країв кнопок */
+    transition: background-color 0.3s, color 0.3s; /* Додано анімацію для фону та кольору */
+    font-size: 1.1em; /* Збільшено шрифт кнопок */
+    display: inline-block; /* Додано для кнопок */
+}
+
+.article-links .social-button:hover {
+    background-color: white; /* Білий фон при наведенні */
+    color: black; /* Чорний текст при наведенні */
+}

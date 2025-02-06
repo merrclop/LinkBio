@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Біографія</title>
+    <link rel="stylesheet" href="bio.css"> <!-- Загальні стилі -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet"> <!-- Підключення шрифту Oswald -->
+</head>
+<body>
+<div class="menu">
+    <a href="#" class="menu-button" onclick="toggleMenu()">...</a> <!-- Кнопка для виклику меню -->
+</div>
+<div class="menu-content" id="menuContent">
+    <h1>Меню</h1>
+    <ul class="article-links">
+        <li><a href="index.html" class="social-button">Головна</a></li>
+        <li><a href="https://telegra.ph/YAk-zrozum%D1%96ti-vpliv-Generativnogo-AI-na-b%D1%96znes-02-06" class="social-button">Як зрозуміти вплив «Генеративного AI» на бізнес?</a></li>
+        <li><a href="https://telegra.ph/23-korisn%D1%96-nejromerezh%D1%96-02-06" class="social-button">23 корисні нейромережі</a></li>
+        <li><a href="https://t.me/desteamtraffic" class="social-button">DES TEAM|TRAFFIC</a></li>
+        <li><a href="https://t.me/freelance_space" class="social-button">FREELANCE_SPACE</a></li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="profile">
+        <img src="image/avatar.jpg" alt="Моє фото" class="profile-photo">
+    </div>
+    <h1>Мене звати Михайло</h1>
+    <p>Metsuki Sutemi.</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/merrclop" class="social-button">Instagram</a>
+        <a href="https://t.me/merrclop" class="social-button">Telegram</a>
+        <a href="https://www.tiktok.com/@merrclop" class="social-button">TikTok</a>
+        <a href="https://github.com/merrclop" class="social-button">GitHub</a>
+    </div>
+</div>
+
+<script>
+    function toggleMenu() {
+        const menuContent = document.getElementById('menuContent');
+        menuContent.classList.toggle('show');
+    }
+</script>
+</body>
+</html>
