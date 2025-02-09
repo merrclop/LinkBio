@@ -36,9 +36,9 @@ p {
 
 .social-links {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Дозволяє кнопкам переходити на новий ряд, якщо не вміщуються */
-    gap: 10px; /* Зменшено відстань між кнопками */
+    flex-direction: column; /* Змінено на column для стовпчикового розташування */
+    align-items: center; /* Центрування кнопок */
+    gap: 10px; /* Відстань між кнопками */
 }
 
 .social-button {
