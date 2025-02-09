@@ -37,7 +37,8 @@ p {
 .social-links {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Збільшено відстань між кнопками */
+    flex-wrap: wrap; /* Дозволяє кнопкам переходити на новий ряд, якщо не вміщуються */
+    gap: 10px; /* Зменшено відстань між кнопками */
 }
 
 .social-button {
@@ -65,7 +66,7 @@ p {
 }
 
 .menu-button {
-    font-size: 24px;
+    font-size: 50px;
     text-decoration: none;
     color: white; /* Білий текст для кнопки меню */
 }
@@ -90,6 +91,9 @@ p {
 .article-links {
     list-style-type: none; /* Вимкнення маркерів списку */
     padding: 0; /* Вимкнення відступів */
+    display: flex; /* Додаємо flexbox для списку */
+    flex-direction: column; /* Вертикальне вирівнювання для списку */
+    align-items: center; /* Центрування кнопок */
 }
 
 .article-links li {
@@ -111,4 +115,39 @@ p {
 .article-links .social-button:hover {
     background-color: white; /* Білий фон при наведенні */
     color: black; /* Чорний текст при наведенні */
+}
+
+/* Медіа-запити для адаптації під мобільні пристрої */
+@media (max-width: 600px) {
+    body {
+        flex-direction: column; /* Вертикальне вирівнювання для мобільних */
+        height: auto; /* Висота не обов'язкова */
+        padding: 20px; /* Внутрішні відступи */
+    }
+
+    .profile-photo {
+        width: 150px; /* Зменшити ширину фото профілю */
+        height: 150px; /* Зменшити висоту фото профілю */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Зменшити розмір заголовка */
+    }
+
+    p {
+        font-size: 1em; /* Зменшити розмір тексту */
+    }
+
+    .social-button {
+        padding: 10px 20px; /* Зменшити розмір кнопок */
+        font-size: 1em; /* Зменшити шрифт кнопок */
+    }
+
+    .menu-button {
+        font-size: 40px; /* Зменшити розмір кнопки меню */
+    }
+
+    .menu-content {
+        padding: 60px; /* Зменшити розмір меню */
+    }
 }
